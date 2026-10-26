@@ -19,16 +19,19 @@
 
 
     <form>
-        <input type="number" class="p-2">
+        <input type="number" class="p-2 text-center" placeholder="inserisci prezzo" id="price">
     </form>
-    
+
 
     <button type="button" class="btn btn-dark p-2 my-2" onclick="Spesa()">Aggiungi al carrello</button>
-    <button type="button" class="btn btn-danger p-2 my-2" onclick="reset()">Reset</button>
+    <button type="button" class="btn btn-danger p-2 my-2" onclick="Reset()">Reset</button>
+    
+
 
     <div class="text-center mx-auto rounded backround w-50 p-2 m-3">
 
         <p>Totale:</p>
+        <p class="fw-bold" id="tot">0 €</p>
     </div>
 
 </div>

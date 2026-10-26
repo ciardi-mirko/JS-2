@@ -4,13 +4,24 @@ function Spesa(){
     
     let prezzo = 0;
 
-    prezzo = prompt ("quanto spendi?");
+    prezzo = document.getElementById("price").value;
+    
 
     prezzo = parseFloat( prezzo );
+    somma = parseFloat( somma );
 
     if(prezzo > 0){
-    somma += prezzo;
+
+    somma += prezzo;    
+    document.getElementById("tot").innerHTML = somma + " €";
 
     console.log("TOTALE SPESA: "+ somma +"€")
     }
+}
+
+function Reset(){
+
+    somma = 0;
+    document.getElementById("tot").innerHTML = somma + " €";
+
 }
